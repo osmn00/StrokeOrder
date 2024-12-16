@@ -1,0 +1,179 @@
+.stroke-display-card {
+  width: 100%;
+  text-align: center;
+}
+
+.pinyin-char-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pinyin {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 4px;
+  height: 28px;
+  font-family: "Microsoft YaHei", sans-serif;
+  font-weight: 500;
+}
+
+.character-container {
+  width: 150px;
+  height: 150px;
+  margin: 12px auto;
+  position: relative;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.character-display {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform: translate(5px, 5px);  /* 微调位置 */
+}
+
+.grid-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    /* 中心十字线 */
+    linear-gradient(90deg, transparent calc(50% - 0.5px), #ddd calc(50% - 0.5px), #ddd calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(0deg, transparent calc(50% - 0.5px), #ddd calc(50% - 0.5px), #ddd calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    /* 对角线 */
+    linear-gradient(45deg, transparent calc(50% - 0.5px), #ddd calc(50% - 0.5px), #ddd calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(-45deg, transparent calc(50% - 0.5px), #ddd calc(50% - 0.5px), #ddd calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    /* 边框 */
+    linear-gradient(#ddd 1px, transparent 1px),
+    linear-gradient(90deg, #ddd 1px, transparent 1px);
+  background-size: 
+    100% 100%,  /* 中心十字线 */
+    100% 100%,
+    100% 100%,  /* 对角线 */
+    100% 100%,
+    100% 100%,  /* 边框 */
+    100% 100%;
+  background-position: center;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.character-display {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.loading-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.controls .ant-btn {
+    margin: 0 4px;
+}
+
+.character-display-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress-info {
+  margin-bottom: 16px;
+  color: #666;
+  font-size: 14px;
+}
+
+.character-input {
+  font-size: 16px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;  /* 添加文本居中 */
+}
+
+/* 添加输入框容器样式 */
+.input-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.custom-button {
+    padding: 4px 15px;
+    border-radius: 6px;
+    border: 1px solid #d9d9d9;
+    background: white;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin: 0 4px;
+  }
+  
+  .custom-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  .custom-button.primary {
+    background: #1677ff;
+    border-color: #1677ff;
+    color: white;
+  }
+  
+  .custom-button:hover:not(:disabled) {
+    opacity: 0.8;
+  }
+
+  .pinyin-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.speak-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.speak-button:hover {
+  background-color: rgba(22, 119, 255, 0.1);
+}
+
+.speak-button:active {
+  transform: scale(0.95);
+}

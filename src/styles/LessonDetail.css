@@ -1,0 +1,58 @@
+.lesson-detail-container {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 24px;
+}
+
+.lesson-header {
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.back-link {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.title-container {
+  text-align: center;
+  padding: 0 120px;
+}
+
+.lesson-icon {
+  font-size: 24px;
+  color: #1677ff;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.title-container h2 {
+  margin: 8px 0 !important;
+  color: #1677ff !important;
+}
+
+.lesson-subtitle {
+  color: #666;
+  font-size: 14px;
+}
+.back-link.custom-button {
+  padding: 4px 15px;
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+  background: white;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.88);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.back-link.custom-button:hover {
+  color: #1677ff;
+  border-color: #1677ff;
+}

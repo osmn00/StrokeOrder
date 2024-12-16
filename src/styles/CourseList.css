@@ -1,0 +1,81 @@
+.course-list-container {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 24px;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 32px !important;
+  color: #1677ff !important;
+}
+
+.title-icon {
+  margin-right: 12px;
+}
+
+.lesson-link {
+  display: block;
+  text-decoration: none;
+}
+
+.lesson-card {
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.lesson-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.lesson-preview {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 16px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.preview-char {
+  display: inline-block;
+}
+
+.more {
+  color: #999;
+}
+
+.lesson-info {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.ant-card-head-title {
+  text-align: center;
+  color: #1677ff;
+}
+.grade-selector {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .grade-selector .ant-select {
+    width: 200px;
+  }
+
+// 添加以下样式
+.ant-list {
+  display: flex;
+  justify-content: center;
+}
+
+.ant-list-grid {
+  width: 100%;
+}
+
+.ant-row {
+  justify-content: center;
+}

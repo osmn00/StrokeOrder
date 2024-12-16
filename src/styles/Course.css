@@ -1,0 +1,16 @@
+.course-list-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.lesson-detail-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.lesson-detail-container h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
